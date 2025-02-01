@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - iTech ShopHub</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <h1>Welcome to iTech ShopHub</h1>
+      <p>Login to your account as a Buyer or Seller</p>
+    </div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <small id="email-error" class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <small id="password-error" class="error-message"></small>
+      </div>
+      
+      <div class="form-group">
+        <label for="role">Login as:</label>
+        <select id="role" name="role" required>
+          <option value="buyer">Buyer</option>
+          <option value="seller">Seller</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <p>Don't have an account? <a href="registration.html">Register here</a>.</p>
+    </form>
+  </div>
+  <script src="Script.js"></script>
+</body>
+</html>
