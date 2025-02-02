@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Render cart items
   function renderCart() {
     const cart = getCart();
-    cartItemsContainer.innerHTML = ""; // Clear previous content
+    cartItemsContainer.innerHTitML = ""; // Clear previous content
     let total = 0;
 
     if (cart.length === 0) {
