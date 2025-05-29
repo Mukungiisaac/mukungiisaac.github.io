@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Midian Tech ltd</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <h1>Welcome to Midian Tech Ltd</h1>
+      <p>Login to your account</p>
+    </div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <small id="email-error" class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <small id="password-error" class="error-message"></small>
+      </div>
+      
+  
+      <button type="submit" class="btn">Login</button>
+      <p>Don't have an account? <a href="registration.html">Register here</a>.</p>
+    </form>
+  </div>
+  <script src="Script.js"></script>
+</body>
+</html>

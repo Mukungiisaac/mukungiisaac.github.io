@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Hero Section */
+.cat {
+  background-color: #f4f4f4;
+  padding: 2rem 1rem;
+}
+
+.cat-content h1 {
+  font-size: 2rem;
+}
+
+.cat-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Categories Section */
+.categories {
+  padding: 2rem 1rem;
+}
+
+.categories-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  position: relative;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+}
+
+.category-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.category-card:hover .category-overlay {
+  opacity: 1;
+}
+
+.btn {
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
+/* Cart Section */
+.cart {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart ul li:last-child {
+  border-bottom: none;
+}
+
+.cart .empty-cart {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
